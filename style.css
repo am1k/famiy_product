@@ -1,0 +1,989 @@
+@import "reset.css";
+@font-face {
+    font-family: PTSerif;
+    src: url(PTSerif/PTZ55F.ttf);
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+#header {
+    width: 100%;
+    background: #fff;
+}
+.top-header {
+    width: 100%;
+    background: #fff;
+}
+.top-header-wrapper {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 50px;
+    overflow: hidden;
+}
+.top-header-wrapper ul {
+    float: left;
+    width: 50%;
+    text-align: justify;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+}
+.top-header-wrapper li {
+    display: inline-block;
+}
+.top-header-wrapper ul li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+.top-header-wrapper li a {
+    text-decoration: underline;
+    color: #6a6a6a;
+    font-size: 11px;
+}
+.top-header-wrapper li a:hover {
+    text-decoration: underline;
+    color: #aeaeae;
+}
+.phone {
+    float: right;
+    width: 40%;
+}
+.phone ul {
+    text-align: justify;
+    width: 100%;
+}
+.phone li {
+    display: inline-block;
+}
+.phone ul li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+.phone p {
+    padding-left: 16%;
+    font-size: 22px;
+    text-align: right;
+    width: 100%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIlJREFUeNpiYGBgcAXin0D8HwsGibsyQhlsDLjBL0aojr1AfAaI2ZEkQZpNgNiZAaooEKqADwmzQ8X/s0B18QAxBxTDACNUnIGJgQgwGBWxIIXJLzRNv6DicEWqQKwExLxAzA/EH4H4M1ScgQEtrt4CcQiURhZHidypUCunokUyRio4jJ4KAAIMAFgSLVr3VmNNAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    float: right;
+    background-position: 0 50%;
+    margin-top: 0.5%;
+    margin-top: 0.5%;
+    font-family: PTSerif;
+    text-shadow: 0 1px 0;
+}
+.phone li span {
+    float: left;
+    padding-top: 5.5%;
+    padding-bottom: 4.5%;
+}
+.phone li button {
+    border: 1px solid #0782e0;
+    background-color: #40a3f4;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: -16%;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 2px 5px -1px #40a3f4;
+}
+.main-header {
+    width: 100%;
+    background-color: #fcc801;
+    background: linear-gradient(to top, #fcc801, #fdd745);
+}
+.main-header-wrapper {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.logo {
+    overflow: hidden;
+    width: 100%;
+    max-width: 118px;
+    margin: 2% auto;
+}
+.logo a {
+    display: inline-block;
+    height: 100%;
+}
+.header-menu {
+    width: 100%;
+    background: #fff;
+}
+.header-menu-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 2px solid #fccd17;
+}
+.header-menu:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    max-width: 623px;
+    height: 100%;
+    max-height: 5px;
+    left: 30%;
+    z-index: 101;
+    background: url("img/shadow-header.png") no-repeat center center;
+}
+.header-menu-wrapper ul {
+    width: 90%;
+    max-width: 940px;
+    text-align: justify;
+    margin: 1% auto;
+}
+.header-menu-wrapper li {
+    display: inline-block;
+}
+.header-menu-wrapper ul li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+.header-menu-wrapper li a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: PTSerif;
+    color: #9f5842;
+    font-weight: bold;
+}
+.header-menu-wrapper li a:hover {
+    color: #f6843d;
+}
+.header-menu-responsive {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: none;
+}
+.header-menu-responsive button {
+    border: 1px solid #0782e0;
+    background-color: #40a3f4;
+    padding: 10px 20px;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 2px 5px -1px #40a3f4;
+}
+.header-menu-responsive:hover .nav-menu {
+    display: block;
+}
+.nav-menu {
+    display: none;
+}
+.nav-menu ul {
+    width: 100%;
+    max-width: 400px;
+}
+.nav-menu li {
+    padding-bottom: 2%;
+}
+.nav-menu li a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: PTSerif;
+    color: #9f5842;
+    font-weight: bold;
+}
+.nav-menu li a:hover{
+    color: #f6843d;
+}
+#main-content {
+    width: 100%;
+    max-width: 940px;
+    height: auto !important;
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.left-sidebar {
+    float: left;
+    margin-top: 5%;
+    width: 100%;
+    max-width: 221px;
+    padding-left: 1px;
+    height: 500px;
+    overflow: hidden;
+}
+.filter {
+    width: 100%;
+    max-width: 218px;
+    float: left;
+    height: 490px;
+    border: 1px solid #f9843c;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0;
+    background-color: #f9843c;
+}
+.filter ul {
+    margin: 5% 0 5% 5%;
+}
+.filter li {
+    padding-bottom: 2%;
+}
+.filter ul li a {
+    text-decoration: underline;
+    color: #222;
+}
+.filter ul li a:hover {
+    text-decoration: none;
+}
+.filter ul li ul li a {
+    color: #fff;
+    font-style: italic;
+}
+.filter ul li ul li a:hover {
+    text-decoration: none;
+}
+.filter ul li ul li span a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.product-block {
+    width: 100%;
+    max-width: 705px;
+    float: right;
+    height: 100%;
+    margin-top: 2%;
+}
+.rubric {
+    width: 100%;
+    margin-top: 5%;
+}
+.rubric h1 {
+    font-size: 26px;
+    font-family: PTSerif;
+    font-weight: bold;
+    width: 35%;
+    float: left;
+    margin-bottom: 1%;
+    max-width: 275px;
+}
+.breadcrumbs {
+    width: 100%;
+    float: left;
+}
+.breadcrumbs li {
+    display: inline-block;
+}
+.breadcrumbs li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("img/next.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 7px;
+    margin-top: 5px;
+}
+.breadcrumbs li p {
+    padding-left: 15px;
+    width: 140%;
+    height: 100%;
+    font-size: 12px;
+    font-style: italic;
+}
+.breadcrumbs li:first-child p {
+    padding-left: 0;
+}
+.breadcrumbs li:first-child:before {
+    background-image: none;
+}
+.breadcrumbs li p a {
+    text-decoration: underline;
+}
+.breadcrumbs li:last-child p a {
+    text-decoration: none;
+}
+.door-description {
+    width: 100%;
+    max-width: 705px;
+    float: right;
+    height: 100%;
+    margin-top: 2%;
+}
+.door-picture {
+    width: 100%;
+    max-width: 135px;
+    margin-left: 4%;
+    margin-top: 2%;
+    max-height: 290px;
+    height: 100%;
+    float: left;
+}
+.door-property {
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    max-height: 200px;
+    margin-top: 2%;
+    border: 1px solid #888888;
+    border-radius: 3px;
+    float: right;
+}
+.door-property ul {
+    margin: 12%;
+}
+.door-property ul li {
+    margin-bottom: 1%;
+    width: 50%;
+    text-align: right;
+}
+.door-property li select {
+    width: 94px;
+    height: 24px;
+    background: url("img/button-down.jpg") no-repeat right;
+    background-position: 96% 50%;
+    background-color:white;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+.door-property ul li ul {
+    margin: 1%;
+    width: 150%;
+}
+.door-property ul li ul li {
+    width: 65%;
+    text-align: left;
+    padding-left: 23%;
+}
+.door-property ul li ul li input {
+    margin-right: 4%;
+}
+.price-doors {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    float: right;
+    margin-top: 5%;
+}
+.price-doors h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-family: PTSerif;
+}
+#tabs {
+    float: left;
+    width: 100%;
+    max-width: 705px;
+    height: 100%;
+    max-height: 350px;
+    margin-top: 10%;
+}
+.tabs-container{
+    padding-top: 5%;
+    margin-top: 1.2%;
+    border-top: 4px solid #fcc800;
+    position: relative;
+    z-index: 101;
+}
+.tabs-container p {
+    padding-bottom: 2%;
+}
+.tabs-navigation{
+    margin: 0;
+    height: 20px;
+}
+.tabs-navigation li{
+    float: left;
+    list-style: none;
+}
+.tabs-navigation li a{
+    display: block;
+    margin-right: 3px;
+    padding: 5px 15px;
+    height: 20px;
+    color: #9e9e9e;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #ececec;
+    background-color: #ececec;
+    border-bottom: none;
+}
+.tabs-navigation li.selected a {
+    color: #b87630;
+    background: #fcc800;
+    border-color: #fcc800;
+}
+.tabs-navigation li:hover a {
+    color: #9e9e9e;
+    border-color: #dcdcdc;
+    background: #dcdcdc;
+}
+#tab-description, #tab-characteristic, #tab-reviews {
+    height: 330px;
+}
+.contact {
+    width: 100%;
+    max-width: 595px;
+}
+form .row,
+form .row-message {
+    display: block;
+    padding: 20px 8px 0 0;
+    margin-bottom: -16px;
+}
+form label {
+    display: inline-block;
+    max-width: 75px;
+    width: 100% ;
+    padding: 6px 0;
+    color: #000;
+    vertical-align: top;
+}
+.row input {
+    width: 100%;
+    max-width: 300px;
+    height: 25px;
+    border: none;
+    background: #ccc;
+}
+.row-message textarea {
+    max-width: 500px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: none;
+    background: #ccc;
+}
+.button {
+    float: right;
+    max-width: 120px;
+    width: 100%;
+    padding-top: 34px;
+}
+#resetbtn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #2ab5ba;
+    float: left;
+    cursor: pointer;
+}
+#resetbtn:focus {
+    outline: none;
+}
+#submitbtn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #2ab5ba;
+    float: right;
+    cursor: pointer;
+}
+#submitbtn:hover {
+    outline: none;
+}
+.related-news {
+    width: 100%;
+    max-width: 705px;
+    margin: 10% auto;
+    float: left;
+}
+.related-news h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-family: PTSerif;
+
+}
+.related-news ul {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.related-news li {
+    display: inline-block;
+}
+.related-news ul li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+.related-news li a {
+    display: inline-block;
+    height: 100%;
+}
+.related-news li h2 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 15px;
+    font-family: PTSerif;
+}
+.related-news li span {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    float: left;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: PTSerif;
+}
+#footer {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px dashed #000;
+    height: 230px;
+}
+.footer-content {
+    width: 90%;
+    max-width: 940px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+.footer-content ul {
+    text-align: justify;
+    margin-top: 5%;
+}
+.footer-content ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-content ul li ul.footer-menu li{
+    display: inherit;
+}
+.footer-content ul li ul.social-icons li {
+    display: inline-block;
+}
+.footer-content ul li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+.footer-content a {
+    text-decoration: underline;
+}
+.footer-content a:hover {
+    color: #aeaeae;
+}
+.social-icons {
+    overflow: hidden;
+    padding-top: 6%;
+}
+.social-icons li {
+    display: inline-block;
+    height: 100%;
+}
+.hand-created {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.hand-created button {
+    border: 1px solid #555555;
+    padding: 7px 10px;
+    background-color: #555;
+    cursor: pointer;
+}
+.hand-created a {
+    color: #fff;
+    text-decoration: underline;
+}
+@media only screen and (min-width: 902px) and (max-width: 960px) {
+
+    .top-header-wrapper {
+        max-height: none;
+    }
+    .top-header-wrapper ul {
+        width: 30%;
+    }
+    .top-header-wrapper ul li {
+        display: block;
+    }
+    .phone {
+        float: left;
+        width: 60%;
+        margin: 5% 0 0 0;
+    }
+    .phone p {
+        padding-left: 5%;
+        float: left;
+        width: 35%;
+        font-size: 18px;
+    }
+    .phone ul {
+        width: 90%;
+    }
+    .phone li button {
+        width: 50%;
+        float: left;
+        margin-top: 0;
+    }
+    .logo {
+        float: none;
+        width: 100%;
+        max-width: 120px;
+        margin: 5% auto;
+    }
+    .header-menu-wrapper {
+        display: none;
+    }
+    .header-menu-responsive {
+        display: block;
+    }
+    .nav-menu {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .product-block {
+        width: 100%;
+        max-width: 620px;
+    }
+    .rubric {
+        max-width: 705px;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .door-description {
+        width: 100%;
+        max-width: 580px;
+    }
+    .door-property {
+        width: 100%;
+        max-width: 400px;
+    }
+    .door-property ul {
+        margin: 3%;
+    }
+    .price-doors  {
+        width: 100%;
+        max-width: 300px;
+    }
+    .left-sidebar {
+        margin-left: 5%;
+    }
+    .related-news {
+        width: 505px;
+    }
+    .related-news li {
+        margin: 7%;
+    }
+    .related-news h1 {
+        font-size: 20px;
+    }
+    .header-menu:after {
+        display: none;
+    }
+}
+@media only screen and (min-width: 640px) and (max-width: 901px) {
+    .top-header-wrapper {
+        max-height: none;
+    }
+    .top-header-wrapper ul {
+        width: 30%;
+    }
+    .top-header-wrapper ul li {
+        display: block;
+    }
+    .phone {
+        float: left;
+        width: 70%;
+        margin: 5% 0 0 0;
+    }
+    .phone p {
+        padding-left: 5%;
+        float: left;
+        width: 35%;
+        font-size: 18px;
+    }
+    .phone ul {
+        width: 90%;
+    }
+    .phone li button {
+        width: 50%;
+        float: left;
+        margin-top: 0;
+    }
+    .logo {
+        float: none;
+        width: 100%;
+        max-width: 120px;
+        margin: 5% auto;
+    }
+    .left-sidebar {
+        margin: 5% auto;
+        width: 100%;
+        max-width: 225px;
+        float: none;
+    }
+    .header-menu-wrapper {
+        display: none;
+    }
+    .header-menu-responsive {
+        display: block;
+    }
+    .nav-menu {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .header-menu:after {
+        display: none;
+    }
+    .product-block {
+        width: 100%;
+        max-width: 620px;
+        float: none;
+        margin: 0 auto;
+    }
+    .rubric {
+        max-width: 705px;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .rubric h1 {
+        width: 100%;
+        max-width: 300px;
+    }
+    .door-description {
+        width: 100%;
+        max-width: 580px;
+    }
+    .door-property {
+        width: 100%;
+        max-width: 400px;
+    }
+    .door-property ul {
+        margin: 3%;
+    }
+    .price-doors  {
+        width: 100%;
+        max-width: 300px;
+    }
+    .related-news {
+        width: 505px;
+    }
+    .related-news li {
+        margin: 7%;
+    }
+    .related-news h1 {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 580px) and (max-width: 639px) {
+    .top-header-wrapper {
+        max-height: none;
+    }
+    .top-header-wrapper ul {
+        width: 20%;
+    }
+    .top-header-wrapper ul li {
+        display: block;
+    }
+    .phone {
+        float: left;
+        width: 70%;
+        margin: 5% 0 0 0;
+    }
+    .phone p {
+        padding-left: 5%;
+        float: left;
+        margin-left: 30%;
+        width: 65%;
+        font-size: 18px;
+    }
+    .phone ul {
+        width: 110%;
+    }
+    .phone li button {
+        margin-top: 0;
+    }
+    .logo {
+        float: none;
+        width: 100%;
+        max-width: 120px;
+        margin: 5% auto;
+    }
+    .header-menu-wrapper {
+        display: none;
+    }
+    .header-menu-responsive {
+        display: block;
+    }
+    .nav-menu {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .left-sidebar {
+        margin: 5% auto;
+        width: 100%;
+        max-width: 225px;
+        float: none;
+    }
+    .product-block {
+        width: 100%;
+        max-width: 620px;
+    }
+    .rubric {
+        max-width: 705px;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .rubric h1 {
+        width: 100%;
+        max-width: 300px;
+    }
+    .door-description {
+        width: 100%;
+        max-width: 580px;
+    }
+    .door-property {
+        width: 100%;
+        max-width: 400px;
+    }
+    .door-property ul {
+        margin: 3%;
+    }
+    .price-doors  {
+        width: 100%;
+        max-width: 300px;
+    }
+    .related-news {
+        width: 505px;
+    }
+    .related-news li {
+        margin: 7%;
+    }
+    .related-news h1 {
+        font-size: 20px;
+    }
+    .header-menu:after {
+        display: none;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 580px) {
+    .top-header-wrapper {
+        max-height: none;
+    }
+    .top-header-wrapper ul {
+        width: 20%;
+    }
+    .top-header-wrapper ul li {
+        display: block;
+    }
+    .phone {
+        float: left;
+        width: 70%;
+        margin: 5% 0 0 0;
+    }
+    .phone p {
+        padding-left: 5%;
+        float: left;
+        margin-left: 30%;
+        width: 65%;
+        font-size: 18px;
+    }
+    .phone ul {
+        width: 110%;
+    }
+    .phone li button {
+        margin-top: 0;
+    }
+    .logo {
+        float: none;
+        width: 100%;
+        max-width: 120px;
+        margin: 5% auto;
+    }
+    .header-menu-wrapper {
+        display: none;
+    }
+    .header-menu-responsive {
+        display: block;
+    }
+    .nav-menu {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .left-sidebar {
+        margin: 5% auto;
+        width: 100%;
+        max-width: 225px;
+        float: none;
+    }
+    .product-block {
+        width: 100%;
+        max-width: 620px;
+    }
+    .rubric {
+        max-width: 705px;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .rubric h1 {
+        width: 100%;
+        max-width: 300px;
+    }
+    .door-description {
+        width: 100%;
+        max-width: 580px;
+    }
+    .door-picture {
+        width: 100%;
+        max-width: 150px;
+        float: none;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .door-property {
+        width: 100%;
+        max-width: 400px;
+        float: none;
+        margin: 5% auto;
+    }
+    .door-property ul {
+        margin: 3%;
+    }
+    .price-doors  {
+        width: 100%;
+        max-width: 300px;
+        float:none;
+        margin: 0 auto;
+    }
+    #tabs {
+        margin-bottom: 15%;
+    }
+    .related-news {
+        width: 505px;
+        margin-top: 15%;
+    }
+    .related-news li {
+        margin: 7%;
+    }
+    .related-news h1 {
+        font-size: 20px;
+    }
+    .header-menu:after {
+        display: none;
+    }
+}
